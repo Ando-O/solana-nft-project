@@ -24,7 +24,7 @@ yarn-debug.log*
 yarn-error.log*
 
 # important info
-app/.env
-app/test.md
+/.env
+/test.md
 
 # test test test
