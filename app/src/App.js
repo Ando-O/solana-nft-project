@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
-
+import CandyMachine from './CandyMachine';
 
 // Constants
 
@@ -68,12 +68,12 @@ const App = () => {
         <div className="header-container">
           <p className="header">🍭 Candy Drop</p>
           <p className="sub-text">NFT drop machine with fair mint</p>
-          {/* Add the condition to show this only if we don't have a wallet address */}
           {!walletAddress && renderNotConnectedContainer()}
         </div>
-        </div>
+        {/* Check for walletAddress and then pass in walletAddress */}
+      {walletAddress && <CandyMachine walletAddress={window.solana} />}
       </div>
-
+    </div>
   );
 };
 
