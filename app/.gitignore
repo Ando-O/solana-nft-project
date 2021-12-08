@@ -25,6 +25,3 @@ yarn-error.log*
 
 # important info
 /.env
-/test.md
-
-# test test test
